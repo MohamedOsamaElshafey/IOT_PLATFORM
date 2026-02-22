@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "31f443a5311da2c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "0444c3e288bf9a2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb08ec2043baebbb",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "system flowchart/IOT_server_flowchart.canvas",
+                "viewState": {
+                  "x": -753.3493099051575,
+                  "y": 69.73646018663564,
+                  "zoom": 3.3306690738754696e-16
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "IOT_server_flowchart"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44613af287ea7f9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "84af9f0890226bd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a561c2404bb3d48e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5f970277dea6b57c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ba9f18b7ec858277",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "99cb9e19eb9a4012",
+    "type": "split",
+    "children": [
+      {
+        "id": "eeeb1116a3dbf772",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d09e2563fd06228",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "system flowchart/IOT_server_flowchart.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for IOT_server_flowchart"
+            }
+          },
+          {
+            "id": "8351c75b974f1fbe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "system flowchart/IOT_server_flowchart.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from IOT_server_flowchart"
+            }
+          },
+          {
+            "id": "9e0b13202238f436",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "56c9a847e7269fa2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3f5f77063ce44d36",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "system flowchart/IOT_server_flowchart.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of IOT_server_flowchart"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "bb08ec2043baebbb",
+  "lastOpenFiles": []
+}

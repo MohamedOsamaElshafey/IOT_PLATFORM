@@ -1,6 +1,6 @@
 import 'package:casper_we/libraries.dart';
 
-class OtpVerificationPage extends StatelessWidget {
+class OtpVerificationPage extends GetView<OtpController> {
   const OtpVerificationPage({super.key});
 
   @override
@@ -64,13 +64,13 @@ class OtpVerificationPage extends StatelessWidget {
                         return SizedBox(
                           width: 45,
                           child: TextField(
-                            controller: otpController.textControllers[index],
-                            focusNode: otpController.focusNodes[index],
+                            controller: controller.textControllers[index],
+                            focusNode: controller.focusNodes[index],
                             keyboardType: TextInputType.number,
                             textAlign: TextAlign.center,
                             maxLength: 1,
                             onChanged: (value) {
-                              otpController.onOtpChanged(value, index);
+                              controller.onOtpChanged(value, index);
                             },
                             decoration: InputDecoration(
                               counterText: '',
@@ -94,7 +94,7 @@ class OtpVerificationPage extends StatelessWidget {
                       height: 48,
                       child: ElevatedButton(
                         onPressed: () {
-                          otpController.verifyOtp();
+                          controller.verifyOtp();
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.blue,

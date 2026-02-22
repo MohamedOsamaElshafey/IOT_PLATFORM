@@ -74,10 +74,10 @@ if ($result->num_rows == 1) {
     $stmt2->bind_param("i", $user_id);
     $stmt2->execute();
 
-    echo " Your email has been verified successfully.";
+    echo " verified_ok";
 
 } else {
 
-    echo "❌ Invalid OTP.";
+    echo "Invalid_OTP.";
 }
 ?>

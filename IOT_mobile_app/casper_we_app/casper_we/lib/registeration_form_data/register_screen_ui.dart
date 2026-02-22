@@ -1,6 +1,6 @@
 import 'package:casper_we/libraries.dart';
 
-class RegisterScreen extends StatelessWidget {
+class RegisterScreen extends GetView<RegisterationFormController> {
   const RegisterScreen({super.key});
 
   @override
@@ -60,6 +60,7 @@ class RegisterScreen extends StatelessWidget {
 
                   // FULL NAME
                   TextField(
+                    controller: controller.nametextController,
                     decoration: InputDecoration(
                       hintText: "Full Name",
                       prefixIcon: Icon(Icons.person),
@@ -70,14 +71,16 @@ class RegisterScreen extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                     ),
-                    onChanged: (value) =>
-                        registerationFormController.name.value = value,
+                    onChanged: (value) {
+                      // registerationFormController.name.value = value,
+                    },
                   ),
 
                   const SizedBox(height: 15),
 
                   // EMAIL
                   TextField(
+                    controller: controller.emailtextController,
                     decoration: InputDecoration(
                       hintText: "Email",
                       prefixIcon: Icon(Icons.email),
@@ -88,14 +91,16 @@ class RegisterScreen extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                     ),
-                    onChanged: (value) =>
-                        registerationFormController.email.value = value,
+                    onChanged: (value) {
+                      //  controller.email.value = value;
+                    },
                   ),
 
                   const SizedBox(height: 15),
 
                   // PASSWORD
                   TextField(
+                    controller: controller.passwordtextController,
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Password",
@@ -108,14 +113,16 @@ class RegisterScreen extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                     ),
-                    onChanged: (value) =>
-                        registerationFormController.password.value = value,
+                    onChanged: (value) {
+                      // registerationFormController.password.value = value;
+                    },
                   ),
 
                   const SizedBox(height: 15),
 
                   // CONFIRM PASSWORD
                   TextField(
+                    controller: controller.retypePasswordtextController,
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Retype Password",
@@ -128,9 +135,9 @@ class RegisterScreen extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                     ),
-                    onChanged: (value) =>
-                        registerationFormController.retypePassword.value =
-                            value,
+                    onChanged: (value) {
+                      //  registerationFormController.retypePassword.value = value;
+                    },
                   ),
 
                   const SizedBox(height: 30),
@@ -141,7 +148,7 @@ class RegisterScreen extends StatelessWidget {
                     height: 55,
                     child: ElevatedButton(
                       onPressed: () {
-                        registerationFormController.register_button();
+                        controller.register_button();
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,

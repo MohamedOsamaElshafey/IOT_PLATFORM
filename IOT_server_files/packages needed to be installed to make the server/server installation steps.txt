@@ -1,0 +1,30 @@
+1-install xampp server 
+2-make a tunnel in cloudflare to forward you to the server on your laptop instead of port forwarding
+3-install the clouddlare tunnel connector on your laptop which wll carry the server
+4- in the cloudflare website make server.casper-we.site for ward you to your local host server which is 127.0.0.1:80
+5-now when you call this DNS server.casper-we.site it woll forward you to the server htdocs in xamppfolder in c partion
+--------------------------------------------------------------
+to install mosquito server on the laptop 
+1-download the mosquito server installer from this wesite  https://mosquitto.org/download/
+2-open advanced system variables and add this path to path C:\Program Files\mosquitto
+3-configure mosquito the configuration file at C:\Program Files\mosquitto\mosquitto.conf
+ or copy paste the configfile attached in the mosquito folder directly in C:\Program Files\mosquitto\
+ ////*
+add this in config file under listeners
+to working with cloudflare
+# ===== MQTT normal TCP (optional, local testing)
+listener 1883
+protocol mqtt
+allow_anonymous true
+
+# ===== MQTT over WebSockets (for Cloudflare)
+listener 8083
+protocol websockets
+allow_anonymous true
+
+*////////
+4- make a service in the cloudflared http:// localhost:8083 and the dns is mqtt.casper-we.site
+5-install the MQTT EXPLORER to test your mqtt 
+   post man will not work 
+because the mosquito server speaks MQTT over websocket protocol
+but post man program speaks only websocket protocol so it wont work because the frames will not be the same

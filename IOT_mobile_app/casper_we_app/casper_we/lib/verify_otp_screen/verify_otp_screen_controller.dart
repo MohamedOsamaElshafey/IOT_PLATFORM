@@ -41,13 +41,13 @@ class OtpController extends GetxController {
   // Call this when "Verify" button is pressed
   void verifyOtp() async {
     await send_http_user_verify_otp_data(
-      registerationFormController.email.value,
+      globalvariables.email.value,
       otp_retype_check.value,
     );
   }
 
   Future<void> send_http_user_verify_otp_data(String email, String OTP) async {
-    String url = 'https://server.casper-we.site/verify.php';
+    String url = "${globalvariables.serverUrl.value}/verify.php";
 
     Map<String, String> formData = {'email': email, 'otp': OTP};
 
@@ -63,15 +63,16 @@ class OtpController extends GetxController {
         // Your PHP returns plain text, so check the text content
         if (response.body.contains("verified_ok")) {
           await showToast(message: "ACCOUNT verified");
-          Get.offAll(() => const UserDevicesscreenpage());
+          Get.offAllNamed('/userdevices'); // Navigate to user devices page
         } else if (response.body.contains("OTP_expired")) {
           await showToast(message: "OTP expired. Please register again");
-          Get.back(); // Go back to registration page
+          Get.offNamed('/register'); // Go back to registration page
         } else if (response.body.contains("Invalid_OTP")) {
           await showToast(message: "Invalid OTP");
         }
       } else {
         showToast(message: "Server error: ${response.statusCode}");
+        log('respose body: ${response.body}');
       }
       log('Response status: ${response.statusCode}');
       log('Response body: ${response.body}');
@@ -83,4 +84,4 @@ class OtpController extends GetxController {
 }
 
 // Self-registering instance
-final OtpController otpController = Get.put(OtpController());
+//final OtpController otpController = Get.put(OtpController());

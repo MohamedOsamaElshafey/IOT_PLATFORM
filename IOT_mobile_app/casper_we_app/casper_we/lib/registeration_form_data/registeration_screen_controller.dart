@@ -7,7 +7,11 @@ class RegisterationFormController extends GetxController {
   var registerError = "".obs;
   var name = "".obs;
   var email = "".obs;
-  var isLoading = false.obs;
+
+  final nametextController = TextEditingController();
+  final emailtextController = TextEditingController();
+  final passwordtextController = TextEditingController();
+  final retypePasswordtextController = TextEditingController();
 
   // Live validation
   Future<void> checkPasswords() async {
@@ -22,25 +26,32 @@ class RegisterationFormController extends GetxController {
     } else if (password.value != retypePassword.value) {
       registerError.value = "Passwords do not match";
     } else {
-      registerError.value =
-          "waiting for server response..."; // Temporary message while waiting for server
+      registerError.value = "send the post registeration request to the server";
     }
-    showToast(message: registerError.value);
     return;
   }
 
   // FIXED: Changed to async and waits for response
   Future<void> register_button() async {
     // First check if passwords match
+    name.value = nametextController.text.trim();
+    email.value = emailtextController.text.trim();
+    password.value = passwordtextController.text;
+    retypePassword.value = retypePasswordtextController.text;
 
+    //store the values also in the global variables for later use in OTP verification
+    globalvariables.name.value = name.value;
+    globalvariables.email.value = email.value;
+    globalvariables.password.value = password.value;
     await checkPasswords();
 
     // Show loading
-    isLoading.value = true;
 
     try {
-      if (registerError.value == "waiting for server response...") {
+      if (registerError.value ==
+          "send the post registeration request to the server") {
         // FIX: Wait for the HTTP request to complete
+        loadingOverlayController.show();
         await send_http_user_registeration_data(
           name.value,
           email.value,
@@ -51,14 +62,12 @@ class RegisterationFormController extends GetxController {
       // Note: The toast for success/error is now shown INSIDE
       // send_http_user_registeration_data based on server response
     } catch (error) {
+      loadingOverlayController.hide();
       showToast(message: "Registration failed: $error");
     } finally {
-      isLoading.value = false;
+      // Ensure loading is hidden in case of any unexpected errors
+      loadingOverlayController.hide();
     }
-
-    log("Password: ${password.value}");
-    log("Retype: ${retypePassword.value}");
-    log("Error: ${registerError.value}");
   }
 
   // FIXED: Now shows toast based on server response
@@ -67,7 +76,7 @@ class RegisterationFormController extends GetxController {
     String email,
     String password,
   ) async {
-    String url = 'https://server.casper-we.site/register.php';
+    String url = "${globalvariables.serverUrl.value}/register.php";
     //good
     Map<String, String> formData = {
       'name': name,
@@ -89,26 +98,34 @@ class RegisterationFormController extends GetxController {
       if (response.statusCode == 200) {
         // Your PHP returns plain text, so check the text content
         if (response.body.contains("Registration successful")) {
+          loadingOverlayController.hide();
           showToast(message: "Registration successful! Check email for OTP");
-          Get.to(() => OtpVerificationPage());
+          Get.offNamed('/verify-otp');
         } else if (response.body.contains("already registered")) {
+          loadingOverlayController.hide();
           showToast(message: "Email already registered");
-        } else if (response.body.contains("All fields are required")) {
-          showToast(message: "Please fill all fields");
         } else {
           // Show whatever PHP returns
+          loadingOverlayController.hide();
           showToast(message: response.body);
         }
       } else {
+        loadingOverlayController.hide();
         showToast(message: "Server error: ${response.statusCode}");
       }
     } catch (error) {
+      loadingOverlayController.hide();
       log('Error during registration: $error');
       showToast(message: "Network error: Please check connection");
     }
   }
-}
 
-final RegisterationFormController registerationFormController = Get.put(
-  RegisterationFormController(),
-);
+  @override
+  void onClose() {
+    nametextController.dispose();
+    emailtextController.dispose();
+    passwordtextController.dispose();
+    retypePasswordtextController.dispose();
+    super.onClose();
+  }
+}

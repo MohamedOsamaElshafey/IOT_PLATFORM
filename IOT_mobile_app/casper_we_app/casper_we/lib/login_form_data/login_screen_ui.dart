@@ -1,6 +1,6 @@
 import 'package:casper_we/libraries.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends GetView<LoginScreenController> {
   const LoginScreen({super.key});
 
   @override
@@ -110,6 +110,7 @@ class LoginScreen extends StatelessWidget {
         children: [
           // Email field
           TextField(
+            controller: controller.emailtextController,
             decoration: InputDecoration(
               labelText: 'Email',
               labelStyle: const TextStyle(color: Colors.grey),
@@ -133,6 +134,7 @@ class LoginScreen extends StatelessWidget {
 
           // Password field
           TextField(
+            controller: controller.passwordtextController,
             obscureText: true,
             decoration: InputDecoration(
               labelText: 'Password',
@@ -160,7 +162,9 @@ class LoginScreen extends StatelessWidget {
             width: double.infinity,
             height: 50,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                controller.login_process();
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF1A237E),
                 foregroundColor: Colors.white,
@@ -177,6 +181,13 @@ class LoginScreen extends StatelessWidget {
                   letterSpacing: 1.2,
                 ),
               ),
+            ),
+          ),
+
+          Obx(
+            () => LoadingOverlay(
+              status: loadingOverlayController.isLoading.value,
+              alignment: Alignment.center,
             ),
           ),
         ],
@@ -209,7 +220,7 @@ class LoginScreen extends StatelessWidget {
               cursor: SystemMouseCursors.click,
               child: GestureDetector(
                 onTap: () {
-                  Get.to(RegisterScreen());
+                  Get.toNamed('/register');
                 },
                 child: const Text(
                   'Sign Up',

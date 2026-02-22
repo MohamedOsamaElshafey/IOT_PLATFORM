@@ -1,6 +1,6 @@
 import 'package:casper_we/libraries.dart';
 
-class UserDevicesscreenpage extends StatelessWidget {
+class UserDevicesscreenpage extends GetView<UserDevicesPageController> {
   const UserDevicesscreenpage({super.key});
 
   @override

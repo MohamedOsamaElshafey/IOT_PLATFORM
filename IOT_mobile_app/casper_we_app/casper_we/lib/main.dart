@@ -1,10 +1,5 @@
+import 'package:casper_we/libraries.dart';
 
-
-import 'package:flutter/material.dart';
-//import 'login_form_data/login_screen_ui.dart';
-import'login_form_data/login_screen_ui.dart';
-//import 'registeration_form_data/register_screen_ui.dart';
-import 'package:get/get.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -17,12 +12,29 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Casper-We Login',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Roboto',
-      ),
-      home: const LoginScreen(),
+      getPages: [
+        GetPage(
+          name: '/login',
+          page: () => const LoginScreen(),
+          binding: LoginScreenControllerBinding(),
+        ),
+        GetPage(
+          name: '/register',
+          page: () => const RegisterScreen(),
+          binding: RegisterationScreenControllerBinding(),
+        ),
+        GetPage(
+          name: '/verify-otp',
+          page: () => const OtpVerificationPage(),
+          binding: VerifyOtpScreenControllerBinding(),
+        ),
+        GetPage(
+          name: '/userdevices',
+          page: () => const UserDevicesscreenpage(),
+          binding: UserDevicesPageControllerBinding(),
+        ),
+      ],
+      initialRoute: '/login',
     );
   }
 }

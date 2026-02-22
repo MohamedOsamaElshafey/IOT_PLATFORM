@@ -1,0 +1,23 @@
+{
+  "pluginList": [
+    "Developer-Mike/obsidian-advanced-canvas"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "Developer-Mike/obsidian-advanced-canvas",
+      "version": "5.6.5"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}

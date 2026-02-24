@@ -1,23 +1,37 @@
 {
 	"nodes":[
+		{"id":"a86f5847b1775225","type":"group","x":7680,"y":2480,"width":13840,"height":7480,"label":"server"},
 		{"id":"3ac6a065155c06d1","type":"group","x":-4160,"y":3360,"width":11600,"height":6240,"label":"mobile app"},
 		{"id":"a04cb9c9d07fb4f3","type":"group","x":-4000,"y":3662,"width":11200,"height":4178,"label":"Registration process APP side"},
-		{"id":"a86f5847b1775225","type":"group","x":-420,"y":-1160,"width":8260,"height":4120,"label":"server"},
-		{"id":"61362bb19a9a26a2","type":"group","x":-400,"y":-400,"width":2180,"height":3200,"label":"Registration process server side "},
-		{"id":"e7d4fa42c07c80f8","type":"group","x":1920,"y":-400,"width":960,"height":3200,"label":"Log in process server side"},
-		{"id":"456be2a28922353d","type":"group","x":340,"y":0,"width":660,"height":2280,"label":"register.php"},
-		{"id":"e12d042a8eef1960","type":"group","x":1020,"y":0,"width":660,"height":1890,"label":"verify.php"},
-		{"id":"758322e2a8ca4a16","type":"group","x":1960,"y":0,"width":660,"height":1320,"label":"Login.php"},
-		{"id":"c9336e427daf22fa","type":"group","x":1480,"y":-1040,"width":620,"height":500,"label":"DB components"},
-		{"id":"d5519b5d29a85854","type":"group","x":-360,"y":0,"width":660,"height":400,"label":"db.php"},
-		{"id":"6a52c23aa97c5d1f","type":"group","x":1490,"y":-900,"width":510,"height":340,"label":"Table 1 "},
-		{"id":"25dedb30302bf9fa","type":"group","x":480,"y":1760,"width":380,"height":440,"label":"OUTPUT"},
-		{"id":"4efa30767b4b1d9e","type":"group","x":1160,"y":1400,"width":380,"height":440,"label":"OUTPUT"},
-		{"id":"985bed0598771f27","type":"group","x":2100,"y":1540,"width":380,"height":340,"label":"OUTPUT"},
-		{"id":"00ad5a2b297653c1","type":"group","x":-1040,"y":-270,"width":300,"height":300,"label":"Untitled group"},
-		{"id":"8db92f14a47592f2","type":"group","x":540,"y":-180,"width":260,"height":120,"label":"input"},
-		{"id":"30444111bbec62fc","type":"group","x":1220,"y":-140,"width":260,"height":80,"label":"input"},
-		{"id":"eb39401f8bb2a6e3","type":"group","x":2160,"y":-140,"width":260,"height":80,"label":"input"},
+		{"id":"7181852d5421bfd0","type":"group","x":22240,"y":1045,"width":4960,"height":7275,"label":"esp communication protocol in the platform"},
+		{"id":"6d07816a63015a31","type":"group","x":11060,"y":4760,"width":5500,"height":5080,"label":"devices processes server side"},
+		{"id":"346b1146d5d51cba","type":"group","x":11080,"y":4880,"width":2600,"height":4880,"label":"listenmqttdevicesinfofromdevicestoserver_thenpublishtotheappafterstoringtheupdatesindbhappens.php"},
+		{"id":"116127796982014a","type":"group","x":13840,"y":4880,"width":2600,"height":4880,"label":"listenmqttdevices_pairing_mode_insertnewdevicein_devicesdb.php"},
+		{"id":"61362bb19a9a26a2","type":"group","x":7700,"y":4760,"width":2180,"height":3200,"label":"Registration processes server side "},
+		{"id":"cb32e9e3fcc457d8","type":"group","x":24640,"y":2880,"width":2560,"height":1620,"label":"MQTT (mosquitto)platform(esp_working_mode) workflow"},
+		{"id":"f7cd2488a7ef2959","type":"group","x":22440,"y":2880,"width":2080,"height":1600,"label":"MQTT (mosquitto)platform(esp_pairing_mode) workflow"},
+		{"id":"df43ccd8ba7016bf","type":"group","x":22360,"y":4560,"width":2000,"height":1600,"label":"Untitled group"},
+		{"id":"e7d4fa42c07c80f8","type":"group","x":10020,"y":4760,"width":960,"height":3200,"label":"Log in process server side"},
+		{"id":"c9336e427daf22fa","type":"group","x":9540,"y":3440,"width":1680,"height":1140,"label":"DB components"},
+		{"id":"456be2a28922353d","type":"group","x":8440,"y":5160,"width":660,"height":2280,"label":"register.php"},
+		{"id":"2bfbfbd34b2fd77e","type":"group","x":25000,"y":2995,"width":2120,"height":640,"label":"listenmqttdevicesinfofromdevicestoserver_thenpublishtotheappafterstoringtheupdatesindbhappens.php"},
+		{"id":"e12d042a8eef1960","type":"group","x":9120,"y":5160,"width":660,"height":1890,"label":"verify.php"},
+		{"id":"758322e2a8ca4a16","type":"group","x":10060,"y":5160,"width":660,"height":1320,"label":"Login.php"},
+		{"id":"3fd79e02fdcab3aa","type":"group","x":22540,"y":3940,"width":1500,"height":400,"label":"server side"},
+		{"id":"76802793726ce602","type":"group","x":22540,"y":3520,"width":1400,"height":360,"label":"topic message"},
+		{"id":"6a52c23aa97c5d1f","type":"group","x":9580,"y":3600,"width":510,"height":940,"label":"users"},
+		{"id":"4b22dfc6e61cc48d","type":"group","x":10125,"y":3600,"width":510,"height":940,"label":"devices"},
+		{"id":"6cda2d06508a1d1f","type":"group","x":22540,"y":3180,"width":1400,"height":260,"label":"device eeprom already saved data inside it"},
+		{"id":"d5519b5d29a85854","type":"group","x":7740,"y":5160,"width":660,"height":400,"label":"db.php"},
+		{"id":"25cd211f00618b74","type":"group","x":22540,"y":2940,"width":1400,"height":180,"label":"app sends these data in pairing mode to the device by connecting through its access point"},
+		{"id":"25dedb30302bf9fa","type":"group","x":8580,"y":6920,"width":380,"height":440,"label":"OUTPUT"},
+		{"id":"4efa30767b4b1d9e","type":"group","x":9260,"y":6560,"width":380,"height":440,"label":"OUTPUT"},
+		{"id":"efa1e998de773d67","type":"group","x":10840,"y":680,"width":560,"height":260,"label":"tasks needed to adjusted in the future"},
+		{"id":"985bed0598771f27","type":"group","x":10200,"y":6700,"width":380,"height":340,"label":"OUTPUT"},
+		{"id":"d0b4a0f2e2a17e59","type":"group","x":24040,"y":3360,"width":412,"height":200,"label":"topic message"},
+		{"id":"8db92f14a47592f2","type":"group","x":8640,"y":4980,"width":260,"height":120,"label":"input"},
+		{"id":"30444111bbec62fc","type":"group","x":9320,"y":5020,"width":260,"height":80,"label":"input"},
+		{"id":"eb39401f8bb2a6e3","type":"group","x":10260,"y":5020,"width":260,"height":80,"label":"input"},
 		{
 			"id":"7c1c3df76949a242",
 			"type":"text",
@@ -29,176 +43,42 @@
 			"height":60
 		},
 		{
-			"id":"2f8030cd53905ed5",
+			"id":"e259a116c6bf8dcd",
 			"type":"text",
-			"text":"take : \n1- email\n2- OTP\n",
+			"text":"'''<?php\n// ==================================================\n// Prevent PHP from timing out (run indefinitely)\n// ==================================================\nset_time_limit(0); // Allow the script to run forever without timing out\n\n// ==================================================\n// Include phpMQTT Library\n// ==================================================\nrequire_once(\"C:/xampp/htdocs/phpMQTT-master/phpMQTT.php\"); // Include the phpMQTT library\nuse Bluerhinos\\phpMQTT; // Use the phpMQTT namespace\n\n// ==================================================\n// MQTT Broker Configuration\n// ==================================================\n$server = '127.0.0.1'; // MQTT broker address (localhost)\n$port = 1883;           // MQTT broker port\n$client_id = 'php_server_listener_' . uniqid(); // Unique client ID for this script\n$username = '';          // MQTT username (if required)\n$password = '';          // MQTT password (if required)\n$useTLS = true;          // Enable TLS for secure WebSocket (WSS)\n\n// ==================================================\n// Create MQTT Client and Connect\n// ==================================================\n$mqtt = new phpMQTT($server, $port, $client_id); // Create a new MQTT client\n\n// Connect to broker via TLS/WSS\nif (!$mqtt->connect(true, NULL, $username, $password, $useTLS)) {\n    exit(\"Failed to connect to MQTT broker via WSS\\n\"); // Exit if connection fails\n}\necho \"Connected to MQTT broker via WSS!\\n\"; // Log success\n\n// ==================================================\n// MQTT Topic Subscription\n// ==================================================\n$topic = \"devices/server/+/device_channels_values_device_ack_to_the_server/\"; \n// '+' wildcard matches any MAC address dynamically\n\n// ==================================================\n// Callback Function for Incoming MQTT Messages\n// ==================================================\n$callback = function($topic, $msg) use ($mqtt) {\n    echo \"[\" . date('Y-m-d H:i:s') . \"] Message received on topic: $topic\\n\";\n\n    // Decode JSON payload from device\n    $data = json_decode($msg, true);\n    if (!$data) return; // Skip if payload is invalid JSON\n\n    // Extract channel values from message\n    $ch1 = $data['ch1_value'] ?? null;\n    $ch2 = $data['ch2_value'] ?? null;\n    $ch3 = $data['ch3_value'] ?? null;\n    $ch4 = $data['ch4_value'] ?? null;\n\n    // Extract device MAC address from topic\n    preg_match(\"/devices\\/server\\/(.+)\\/device_channels_values_device_ack_to_the_server\\//\", $topic, $matches);\n    if (!isset($matches[1])) return; // Skip if MAC address not found\n    $mac_address = $matches[1];\n\n    // Connect to MySQL database\n    $mysqli = new mysqli(\"localhost\", \"root\", \"\", \"u.t.m_tech\");\n    if ($mysqli->connect_error) return; // Skip if DB connection fails\n\n    // ==================================================\n    // Update Device in Database\n    // ==================================================\n    $stmt = $mysqli->prepare(\"\n        UPDATE devices SET\n            ch1_value = ?,\n            ch2_value = ?,\n            ch3_value = ?,\n            ch4_value = ?,\n            last_seen = NOW(),\n            online = 1\n        WHERE mac_address = ?\n    \");\n    $stmt->bind_param(\"dddds\", $ch1, $ch2, $ch3, $ch4, $mac_address);\n    $stmt->execute();\n\n    // ==================================================\n    // Publish Acknowledgment to App\n    // ==================================================\n    if ($stmt->affected_rows > 0) {\n        echo \"Device $mac_address updated successfully\\n\";\n\n        // Prepare acknowledgment payload\n        $ack_payload = json_encode([\n            'ch1_value' => $ch1,\n            'ch2_value' => $ch2,\n            'ch3_value' => $ch3,\n            'ch4_value' => $ch4,\n            'online'    => 1\n        ]);\n\n        // Publish acknowledgment to app topic\n        $ack_topic = \"server/app/$mac_address/device_channels_values_server_ack_to_the_app/\";\n        $mqtt->publish($ack_topic, $ack_payload, 0, false);\n        echo \"Acknowledgment published to $ack_topic\\n\";\n    } else {\n        echo \"Device $mac_address not found — skipping update.\\n\";\n    }\n\n    // Close statement and database connection\n    $stmt->close();\n    $mysqli->close();\n};\n\n// ==================================================\n// Subscribe to MQTT Topic\n// ==================================================\n$mqtt->subscribe([$topic => ['qos' => 0, 'function' => $callback]]);\n\n// ==================================================\n// Offline Detection Configuration\n// ==================================================\n$offline_check_interval = 60; // Check every 60 seconds\n$offline_timeout = 300;       // Consider offline if no updates for 5 minutes\n$last_offline_check = time(); // Track last offline check time\n\n// ==================================================\n// Main Loop\n// ==================================================\nwhile ($mqtt->proc()) {\n\n    // Check periodically for offline devices\n    if (time() - $last_offline_check >= $offline_check_interval) {\n        $mysqli = new mysqli(\"localhost\", \"root\", \"\", \"u.t.m_tech\");\n        if (!$mysqli->connect_error) {\n\n            // Step 1: Select devices that are online but inactive\n            $stmt = $mysqli->prepare(\"\n                SELECT mac_address, ch1_value, ch2_value, ch3_value, ch4_value\n                FROM devices\n                WHERE online = 1 AND last_seen IS NOT NULL\n                AND last_seen < (NOW() - INTERVAL ? SECOND)\n            \");\n            $stmt->bind_param(\"i\", $offline_timeout);\n            $stmt->execute();\n            $result = $stmt->get_result();\n\n            // Step 2: Loop through offline devices\n            while ($row = $result->fetch_assoc()) {\n                $mac_address = $row['mac_address'];\n                $ch1 = $row['ch1_value'];\n                $ch2 = $row['ch2_value'];\n                $ch3 = $row['ch3_value'];\n                $ch4 = $row['ch4_value'];\n\n                // Step 3: Update database: mark device as offline\n                $update_stmt = $mysqli->prepare(\"\n                    UPDATE devices SET online = 0\n                    WHERE mac_address = ?\n                \");\n                $update_stmt->bind_param(\"s\", $mac_address);\n                $update_stmt->execute();\n                $update_stmt->close();\n\n                echo \"[\" . date('Y-m-d H:i:s') . \"] Device $mac_address marked offline\\n\";\n\n                // Step 4: Publish offline notification to app\n                $offline_payload = json_encode([\n                    'ch1_value' => $ch1,\n                    'ch2_value' => $ch2,\n                    'ch3_value' => $ch3,\n                    'ch4_value' => $ch4,\n                    'online'    => 0\n                ]);\n                $offline_topic = \"server/app/$mac_address/device_channels_values_server_ack_to_the_app/\";\n                $mqtt->publish($offline_topic, $offline_payload, 0, false);\n\n                echo \"Offline notification published to $offline_topic\\n\";\n            }\n\n            $stmt->close();\n        }\n\n        $mysqli->close();\n        $last_offline_check = time(); // Reset last check timestamp\n    }\n}\n\n// Close MQTT connection (never reached in this script)\n$mqtt->close();\n?>",
 			"styleAttributes":{},
-			"x":1220,
-			"y":-140,
-			"width":260,
-			"height":80
+			"x":11180,
+			"y":5810,
+			"width":2340,
+			"height":2790
 		},
 		{
-			"id":"89c2472a2ecd7b04",
+			"id":"6e6a925566342dec",
 			"type":"text",
-			"text":"three files responsible for Registeration process:\n1️⃣ `db.php` → Database connection  \n2️⃣ `register.php` → Register + Send OTP  \n3️⃣ `verify.php` → Verify OTP",
-			"styleAttributes":{
-				"textAlign":null
-			},
-			"x":-360,
-			"y":-380,
-			"width":400,
-			"height":170
-		},
-		{
-			"id":"7c7d8335e6ed03d0",
-			"type":"text",
-			"text":"\n'''<?php\ninclude \"db.php\";\n\n// Only allow POST\nif ($_SERVER[\"REQUEST_METHOD\"] != \"POST\") {\n    die(\"Invalid request.\");\n}\n\n// Get input safely\n$name     = trim($_POST['name'] ?? '');\n$email    = trim($_POST['email'] ?? '');\n$password = $_POST['password'] ?? '';\n\n// Check empty\nif ($name == \"\" || $email == \"\" || $password == \"\") {\n    die(\"All fields are required.\");\n}\n\n// Check if email exists\n$stmt = $conn->prepare(\"SELECT id FROM users WHERE email = ?\");\n$stmt->bind_param(\"s\", $email);\n$stmt->execute();\n$stmt->store_result();\n\nif ($stmt->num_rows > 0) {\n    die(\"This email is already registered.\");\n}\n\n// Generate OTP (6 digits)\n$otp = rand(100000, 999999);\n\n// Hash password\n$hashed = password_hash($password, PASSWORD_DEFAULT);\n\n// Not verified yet\n$is_verified = 0;\n\n// Insert user\n$sql = \"INSERT INTO users\n(name, email, password, is_verified, verify_otp, otp_expire)\nVALUES (?, ?, ?, ?, ?, DATE_ADD(NOW(), INTERVAL 15 MINUTE))\";\n\n$stmt = $conn->prepare($sql);\n\n$stmt->bind_param(\n    \"sssis\",\n    $name,\n    $email,\n    $hashed,\n    $is_verified,\n    $otp\n);\n\nif ($stmt->execute()) {\n\n    // Send OTP Email\n    $subject = \"Your OTP Verification Code\";\n    $message = \"Hello $name,\\n\\nYour OTP code is: $otp\\nIt expires in 15 minutes.\\n\\nDo not share it.\";\n    $headers = \"From: no-reply@casperwe.site\";\n\n    mail($email, $subject, $message, $headers);\n\n    echo \"Registration successful.\\n\";\n    echo \"Please check your email for the OTP code.\";\n\n} else {\n\n    echo \"Registration failed. Try again.\";\n\n}\n?>\n\n",
+			"text":"### **Workflow of `listenmqttdevicesinfofromdevicestoserver.php   (Working_mode)`**\n\n1. **Initialize Script**\n    \n    - Prevents PHP from timing out (`set_time_limit(0)`), allowing continuous execution.\n        \n    - Includes the `phpMQTT` library and uses the `Bluerhinos\\phpMQTT` namespace.\n        \n2. **Connect to MQTT Broker**\n    \n    - Connects securely via **WSS/TLS** to the broker at `127.0.0.1` (or your server).\n        \n    - Generates a **unique client ID** for this session.\n        \n    - Optionally uses authentication (`username`/`password`).\n        \n3. **Subscribe to Device Topics**\n    \n    - Subscribes to:\n        \n        devices/server/+/device_channels_values_device_ack_to_the_server/\n        \n    - The `+` wildcard allows dynamic subscription to all devices based on their MAC addresses.\n        \n4. **Listen for Incoming Messages**\n    \n    - Continuously waits for MQTT messages from devices.\n        \n    - Each message is expected to be JSON with channel values:\n        \n        ch1_value, ch2_value, ch3_value, ch4_value\n        \n5. **Extract Device MAC Address**\n    \n    - Parses the MAC address from the MQTT topic using a regex.\n        \n    - Skips processing if the MAC address is invalid or missing.\n        \n6. **Update Device Status in Database**\n    \n    - Connects to MySQL database `u.t.m_tech`.\n        \n    - Updates the corresponding `devices` table entry:\n        \n        - Sets `ch1_value` → `ch4_value`\n            \n        - Updates `last_seen` timestamp\n            \n        - Sets `online = 1`\n            \n    - Skips update if the device is not found.\n        \n7. **Publish Acknowledgment to App**\n    \n    - If the database update succeeds, publishes a JSON acknowledgment to:\n        \n        server/app/<mac_address>/device_channels_values_server_ack_to_the_app/\n        \n    - Payload includes updated channel values and `online = 1`.\n        \n8. **Periodic Offline Detection**\n    \n    - Every **60 seconds**, checks devices that haven’t reported in the last **5 minutes**.\n        \n    - Marks such devices as `online = 0` in the database.\n        \n    - Publishes an offline notification to the app topic with the last known channel values.\n        \n9. **Continuous Loop**\n    \n    - The script repeats indefinitely, listening for messages, updating the database, sending acknowledgments, and checking offline devices.\n        \n10. **Clean Up (Not Normally Reached)**\n    \n    - Closes MQTT connection if the script ever exits.",
 			"styleAttributes":{},
-			"x":370,
-			"y":20,
-			"width":600,
-			"height":1660
-		},
-		{
-			"id":"8ad01a6475cd24bb",
-			"type":"text",
-			"text":"'''<?php\ninclude \"db.php\";\n\n// Only allow POST\nif ($_SERVER[\"REQUEST_METHOD\"] != \"POST\") {\n    die(\"Invalid request.\");\n}\n\n// Get input\n$email = trim($_POST['email'] ?? '');\n$otp   = trim($_POST['otp'] ?? '');\n\nif ($email == \"\" || $otp == \"\") {\n    die(\"Email and OTP are required.\");\n}\n\n/*\n|--------------------------------------------------------------------------\n| 1. Check if OTP exists but expired\n|--------------------------------------------------------------------------\n*/\n$sqlExpired = \"SELECT id FROM users\n               WHERE email = ?\n               AND verify_otp = ?\n               AND otp_expire <= NOW()\n               AND is_verified = 0\";\n\n$stmtExpired = $conn->prepare($sqlExpired);\n$stmtExpired->bind_param(\"ss\", $email, $otp);\n$stmtExpired->execute();\n$resultExpired = $stmtExpired->get_result();\n\nif ($resultExpired->num_rows > 0) {\n\n    // Delete expired registration\n    $sqlDelete = \"DELETE FROM users WHERE email = ?\";\n    $stmtDelete = $conn->prepare($sqlDelete);\n    $stmtDelete->bind_param(\"s\", $email);\n    $stmtDelete->execute();\n\n    echo \"OTP expired. Please register again.\";\n    exit;\n}\n\n/*\n|--------------------------------------------------------------------------\n| 2. Check valid OTP\n|--------------------------------------------------------------------------\n*/\n$sql = \"SELECT id FROM users\n        WHERE email = ?\n        AND verify_otp = ?\n        AND otp_expire > NOW()\n        AND is_verified = 0\";\n\n$stmt = $conn->prepare($sql);\n$stmt->bind_param(\"ss\", $email, $otp);\n$stmt->execute();\n$result = $stmt->get_result();\n\nif ($result->num_rows == 1) {\n\n    $row = $result->fetch_assoc();\n    $user_id = $row['id'];\n\n    // Activate account\n    $sql2 = \"UPDATE users SET\n             is_verified = 1,\n             verify_otp = NULL,\n             otp_expire = NULL\n             WHERE id = ?\";\n\n    $stmt2 = $conn->prepare($sql2);\n    $stmt2->bind_param(\"i\", $user_id);\n    $stmt2->execute();\n\n    echo \" Your email has been verified successfully.\";\n\n} else {\n\n    echo \"❌ Invalid OTP.\";\n}\n?>\n",
-			"styleAttributes":{},
-			"x":1050,
-			"y":20,
-			"width":600,
-			"height":1260
-		},
-		{
-			"id":"67569e769192d9ed",
-			"type":"text",
-			"text":"die(\"Invalid request.\");",
-			"styleAttributes":{},
-			"x":1220,
-			"y":1420,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"27012ffa0464c86c",
-			"type":"text",
-			"text":" '''<?php\n$host = \"localhost\";\n$user = \"root\";\n$pass = \"\";\n$db   = \"mydatabase\";\n\n$conn = new mysqli($host, $user, $pass, $db);\n\nif ($conn->connect_error) {\n    die(\"Database connection failed: \" . $conn->connect_error);\n}\n?>\n\n",
-			"styleAttributes":{},
-			"x":-330,
-			"y":20,
-			"width":600,
-			"height":300
+			"x":11180,
+			"y":4920,
+			"width":2340,
+			"height":820
 		},
 		{
 			"id":"adac3bf7aa61cddb",
 			"type":"text",
 			"text":"'''<?php\nsession_start();      // Start session\ninclude \"db.php\";\n\n// Only allow POST\nif ($_SERVER[\"REQUEST_METHOD\"] != \"POST\") {\n    die(\"Invalid request.\");\n}\n\n// Get inputs\n$email    = trim($_POST['email'] ?? '');\n$password = $_POST['password'] ?? '';\n\n// Check empty\nif ($email == \"\" || $password == \"\") {\n    die(\"Email and password are required.\");\n}\n\n// Get user from DB\n$sql = \"SELECT id, password, is_verified\n        FROM users\n        WHERE email = ?\";\n\n$stmt = $conn->prepare($sql);\n$stmt->bind_param(\"s\", $email);\n$stmt->execute();\n\n$result = $stmt->get_result();\n\n// Check if email exists\nif ($result->num_rows != 1) {\n    die(\"Email or password is not correct.\");\n}\n\n$user = $result->fetch_assoc();\n\n// Check password\nif (!password_verify($password, $user['password'])) {\n    die(\"Email or password is not correct.\");\n}\n\n// Check verification\nif ($user['is_verified'] != 1) {\n    die(\"Please verify your email before login.\");\n}\n\n// Login successful ✅\n\n// Save user id in session\n$_SESSION['user_id'] = $user['id'];\n\n// Redirect to projects page\necho \"Login successful. Redirecting...\";\nheader(\"Location: user_projects.php\");\nexit();\n\n?>\n",
 			"styleAttributes":{},
-			"x":1990,
-			"y":20,
+			"x":10090,
+			"y":5180,
 			"width":600,
 			"height":1260
-		},
-		{
-			"id":"72be2a7de3f95eb6",
-			"type":"text",
-			"text":"take : \n1- name\n2- email\n3- password",
-			"styleAttributes":{},
-			"x":540,
-			"y":-180,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"0f481e225fe528ba",
-			"type":"text",
-			"text":"take : \n1- email\n2- password\n",
-			"styleAttributes":{},
-			"x":2160,
-			"y":-140,
-			"width":260,
-			"height":85
-		},
-		{
-			"id":"ba10c721c9f41bb4",
-			"type":"text",
-			"text":"users :\n1- id                  : Auto increment , Primary key\n2- name\n3- email            : index-> unique\n4- password\n5- is_verified\n6- verify_otp\n7- otp_expire : stores the time at which OTP will be expired \n8- created at : it records the exact time at which the user was                         inserted into the database ",
-			"styleAttributes":{
-				"border":null
-			},
-			"x":1500,
-			"y":-850,
-			"width":480,
-			"height":270
-		},
-		{
-			"id":"175879265f45c47b",
-			"type":"text",
-			"text":"database name : casper-we-iot-platform",
-			"styleAttributes":{},
-			"x":1610,
-			"y":-1020,
-			"width":340,
-			"height":60
-		},
-		{
-			"id":"7c213fe2ec0fd859",
-			"type":"text",
-			"text":"die(\"All fields are required.\");",
-			"styleAttributes":{},
-			"x":540,
-			"y":1780,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"1ec00cb28d19b07c",
-			"type":"text",
-			"text":"echo \"Registration successful.\\n\";",
-			"styleAttributes":{},
-			"x":540,
-			"y":1880,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"6ed3b8f53beb77ec",
-			"type":"text",
-			"text":"echo \"Registration failed. Try again.\";\n",
-			"styleAttributes":{},
-			"x":540,
-			"y":2100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9d779d02c8ba35f1",
-			"type":"text",
-			"text":"echo \"Please check your email for the OTP code.\";",
-			"styleAttributes":{},
-			"x":540,
-			"y":2000,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"be826927e02b94bb",
-			"type":"text",
-			"text":"die(\"Email and OTP are required.\");",
-			"styleAttributes":{},
-			"x":1220,
-			"y":1500,
-			"width":260,
-			"height":60
 		},
 		{
 			"id":"053a63f8440375b8",
 			"type":"text",
 			"text":"die(\"Email and password are required.\");",
 			"styleAttributes":{},
-			"x":2160,
-			"y":1560,
+			"x":10260,
+			"y":6720,
 			"width":260,
 			"height":60
 		},
@@ -207,18 +87,8 @@
 			"type":"text",
 			"text":"die(\"Email or password is not correct.\");",
 			"styleAttributes":{},
-			"x":2160,
-			"y":1640,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9fae7659d4c4c6da",
-			"type":"text",
-			"text":"echo \"Login successful. Redirecting...\";",
-			"styleAttributes":{},
-			"x":2160,
-			"y":1800,
+			"x":10260,
+			"y":6800,
 			"width":260,
 			"height":60
 		},
@@ -227,18 +97,48 @@
 			"type":"text",
 			"text":"die(\"Please verify your email before login.\");",
 			"styleAttributes":{},
-			"x":2160,
-			"y":1720,
+			"x":10260,
+			"y":6880,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"35c4ea71d8275c0f",
+			"id":"9fae7659d4c4c6da",
 			"type":"text",
-			"text":"echo \"❌ Invalid or expired OTP.\";",
+			"text":"echo \"Login successful. Redirecting...\";",
 			"styleAttributes":{},
-			"x":1220,
-			"y":1760,
+			"x":10260,
+			"y":6960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8ad01a6475cd24bb",
+			"type":"text",
+			"text":"'''<?php\ninclude \"db.php\";\n\n// Only allow POST\nif ($_SERVER[\"REQUEST_METHOD\"] != \"POST\") {\n    die(\"Invalid request.\");\n}\n\n// Get input\n$email = trim($_POST['email'] ?? '');\n$otp   = trim($_POST['otp'] ?? '');\n\nif ($email == \"\" || $otp == \"\") {\n    die(\"Email and OTP are required.\");\n}\n\n/*\n|--------------------------------------------------------------------------\n| 1. Check if OTP exists but expired\n|--------------------------------------------------------------------------\n*/\n$sqlExpired = \"SELECT id FROM users\n               WHERE email = ?\n               AND verify_otp = ?\n               AND otp_expire <= NOW()\n               AND is_verified = 0\";\n\n$stmtExpired = $conn->prepare($sqlExpired);\n$stmtExpired->bind_param(\"ss\", $email, $otp);\n$stmtExpired->execute();\n$resultExpired = $stmtExpired->get_result();\n\nif ($resultExpired->num_rows > 0) {\n\n    // Delete expired registration\n    $sqlDelete = \"DELETE FROM users WHERE email = ?\";\n    $stmtDelete = $conn->prepare($sqlDelete);\n    $stmtDelete->bind_param(\"s\", $email);\n    $stmtDelete->execute();\n\n    echo \"OTP expired. Please register again.\";\n    exit;\n}\n\n/*\n|--------------------------------------------------------------------------\n| 2. Check valid OTP\n|--------------------------------------------------------------------------\n*/\n$sql = \"SELECT id FROM users\n        WHERE email = ?\n        AND verify_otp = ?\n        AND otp_expire > NOW()\n        AND is_verified = 0\";\n\n$stmt = $conn->prepare($sql);\n$stmt->bind_param(\"ss\", $email, $otp);\n$stmt->execute();\n$result = $stmt->get_result();\n\nif ($result->num_rows == 1) {\n\n    $row = $result->fetch_assoc();\n    $user_id = $row['id'];\n\n    // Activate account\n    $sql2 = \"UPDATE users SET\n             is_verified = 1,\n             verify_otp = NULL,\n             otp_expire = NULL\n             WHERE id = ?\";\n\n    $stmt2 = $conn->prepare($sql2);\n    $stmt2->bind_param(\"i\", $user_id);\n    $stmt2->execute();\n\n    echo \" Your email has been verified successfully.\";\n\n} else {\n\n    echo \"❌ Invalid OTP.\";\n}\n?>\n",
+			"styleAttributes":{},
+			"x":9150,
+			"y":5180,
+			"width":600,
+			"height":1260
+		},
+		{
+			"id":"0f481e225fe528ba",
+			"type":"text",
+			"text":"take : \n1- email\n2- password\n",
+			"styleAttributes":{},
+			"x":10260,
+			"y":5020,
+			"width":260,
+			"height":85
+		},
+		{
+			"id":"be826927e02b94bb",
+			"type":"text",
+			"text":"die(\"Email and OTP are required.\");",
+			"styleAttributes":{},
+			"x":9320,
+			"y":6660,
 			"width":260,
 			"height":60
 		},
@@ -247,8 +147,8 @@
 			"type":"text",
 			"text":"echo \"✅ Your email has been verified successfully.\";",
 			"styleAttributes":{},
-			"x":1220,
-			"y":1580,
+			"x":9320,
+			"y":6740,
 			"width":260,
 			"height":60
 		},
@@ -257,22 +157,423 @@
 			"type":"text",
 			"text":"echo \"\\nYou can now login.\";",
 			"styleAttributes":{},
-			"x":1220,
-			"y":1660,
+			"x":9320,
+			"y":6820,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"35c4ea71d8275c0f",
+			"type":"text",
+			"text":"echo \"❌ Invalid or expired OTP.\";",
+			"styleAttributes":{},
+			"x":9320,
+			"y":6920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"67569e769192d9ed",
+			"type":"text",
+			"text":"die(\"Invalid request.\");",
+			"styleAttributes":{},
+			"x":9320,
+			"y":6580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2f8030cd53905ed5",
+			"type":"text",
+			"text":"take : \n1- email\n2- OTP\n",
+			"styleAttributes":{},
+			"x":9320,
+			"y":5020,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"7c7d8335e6ed03d0",
+			"type":"text",
+			"text":"\n'''<?php\ninclude \"db.php\";\n\n// Only allow POST\nif ($_SERVER[\"REQUEST_METHOD\"] != \"POST\") {\n    die(\"Invalid request.\");\n}\n\n// Get input safely\n$name     = trim($_POST['name'] ?? '');\n$email    = trim($_POST['email'] ?? '');\n$password = $_POST['password'] ?? '';\n\n// Check empty\nif ($name == \"\" || $email == \"\" || $password == \"\") {\n    die(\"All fields are required.\");\n}\n\n// Check if email exists\n$stmt = $conn->prepare(\"SELECT id FROM users WHERE email = ?\");\n$stmt->bind_param(\"s\", $email);\n$stmt->execute();\n$stmt->store_result();\n\nif ($stmt->num_rows > 0) {\n    die(\"This email is already registered.\");\n}\n\n// Generate OTP (6 digits)\n$otp = rand(100000, 999999);\n\n// Hash password\n$hashed = password_hash($password, PASSWORD_DEFAULT);\n\n// Not verified yet\n$is_verified = 0;\n\n// Insert user\n$sql = \"INSERT INTO users\n(name, email, password, is_verified, verify_otp, otp_expire)\nVALUES (?, ?, ?, ?, ?, DATE_ADD(NOW(), INTERVAL 15 MINUTE))\";\n\n$stmt = $conn->prepare($sql);\n\n$stmt->bind_param(\n    \"sssis\",\n    $name,\n    $email,\n    $hashed,\n    $is_verified,\n    $otp\n);\n\nif ($stmt->execute()) {\n\n    // Send OTP Email\n    $subject = \"Your OTP Verification Code\";\n    $message = \"Hello $name,\\n\\nYour OTP code is: $otp\\nIt expires in 15 minutes.\\n\\nDo not share it.\";\n    $headers = \"From: no-reply@casperwe.site\";\n\n    mail($email, $subject, $message, $headers);\n\n    echo \"Registration successful.\\n\";\n    echo \"Please check your email for the OTP code.\";\n\n} else {\n\n    echo \"Registration failed. Try again.\";\n\n}\n?>\n\n",
+			"styleAttributes":{},
+			"x":8470,
+			"y":5180,
+			"width":600,
+			"height":1660
+		},
+		{
+			"id":"7c213fe2ec0fd859",
+			"type":"text",
+			"text":"die(\"All fields are required.\");",
+			"styleAttributes":{},
+			"x":8640,
+			"y":6940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1ec00cb28d19b07c",
+			"type":"text",
+			"text":"echo \"Registration successful.\\n\";",
+			"styleAttributes":{},
+			"x":8640,
+			"y":7040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d779d02c8ba35f1",
+			"type":"text",
+			"text":"echo \"Please check your email for the OTP code.\";",
+			"styleAttributes":{},
+			"x":8640,
+			"y":7160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6ed3b8f53beb77ec",
+			"type":"text",
+			"text":"echo \"Registration failed. Try again.\";\n",
+			"styleAttributes":{},
+			"x":8640,
+			"y":7260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0efbf19d16c6bcca",
+			"type":"text",
+			"text":"-- phpMyAdmin SQL Dump\n-- version 5.2.1\n-- https://www.phpmyadmin.net/\n--\n-- Host: 127.0.0.1\n-- Generation Time: Feb 22, 2026 at 11:13 AM\n-- Server version: 10.4.32-MariaDB\n-- PHP Version: 8.0.30\n\nSET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";\nSTART TRANSACTION;\nSET time_zone = \"+00:00\";\n\n\n/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;\n/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;\n/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;\n/*!40101 SET NAMES utf8mb4 */;\n\n--\n-- Database: `casperwe`\n--\n\n-- --------------------------------------------------------\n\n--\n-- Table structure for table `users`\n--\n\nCREATE TABLE `users` (\n  `id` int(11) NOT NULL,\n  `name` varchar(100) NOT NULL,\n  `email` varchar(150) NOT NULL,\n  `password` varchar(255) NOT NULL,\n  `is_verified` tinyint(1) DEFAULT 0,\n  `verify_otp` varchar(6) DEFAULT NULL,\n  `otp_expire` datetime DEFAULT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp()\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;\n\n--\n-- Indexes for dumped tables\n--\n\n--\n-- Indexes for table `users`\n--\nALTER TABLE `users`\n  ADD PRIMARY KEY (`id`),\n  ADD UNIQUE KEY `email` (`email`);\n\n--\n-- AUTO_INCREMENT for dumped tables\n--\n\n--\n-- AUTO_INCREMENT for table `users`\n--\nALTER TABLE `users`\n  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;\nCOMMIT;\n\n/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;\n/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;\n/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;\n",
+			"styleAttributes":{},
+			"x":9590,
+			"y":4060,
+			"width":480,
+			"height":420
+		},
+		{
+			"id":"25ade2f74d7a12bd",
+			"type":"text",
+			"text":"-- phpMyAdmin SQL Dump\n-- version 5.2.1\n-- https://www.phpmyadmin.net/\n--\n-- Host: 127.0.0.1\n-- Generation Time: Feb 22, 2026 at 11:10 AM\n-- Server version: 10.4.32-MariaDB\n-- PHP Version: 8.0.30\n\nSET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";\nSTART TRANSACTION;\nSET time_zone = \"+00:00\";\n\n\n/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;\n/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;\n/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;\n/*!40101 SET NAMES utf8mb4 */;\n\n--\n-- Database: `casperwe`\n--\n\n-- --------------------------------------------------------\n\n--\n-- Table structure for table `devices`\n--\n\nCREATE TABLE `devices` (\n  `mac_address` varchar(17) NOT NULL,\n  `device_type` enum('DO-1CH','DO-2CH','DO-3CH','DO-4CH','AI-1CH','AI-2CH','AI-3CH','AI-4CH') NOT NULL,\n  `ch1_value` float DEFAULT NULL,\n  `ch2_value` float DEFAULT NULL,\n  `ch3_value` float DEFAULT NULL,\n  `ch4_value` float DEFAULT NULL,\n  `online` tinyint(1) DEFAULT 0,\n  `owner_user_id` int(11) DEFAULT NULL COMMENT 'IS LINKED TO THE USER DEVICE',\n  `last_seen` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT 'recording the last time the device uodated his information',\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp() COMMENT 'recording the first time the device inserted to the DB'\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;\n\n--\n-- Indexes for dumped tables\n--\n\n--\n-- Indexes for table `devices`\n--\nALTER TABLE `devices`\n  ADD PRIMARY KEY (`mac_address`),\n  ADD KEY `owner_user_id` (`owner_user_id`);\n\n--\n-- Constraints for dumped tables\n--\n\n--\n-- Constraints for table `devices`\n--\nALTER TABLE `devices`\n  ADD CONSTRAINT `devices_ibfk_1` FOREIGN KEY (`owner_user_id`) REFERENCES `users` (`id`);\nCOMMIT;\n\n/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;\n/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;\n/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;\n",
+			"styleAttributes":{
+				"border":null
+			},
+			"x":10140,
+			"y":4060,
+			"width":480,
+			"height":420
+		},
+		{
+			"id":"72be2a7de3f95eb6",
+			"type":"text",
+			"text":"take : \n1- name\n2- email\n3- password",
+			"styleAttributes":{},
+			"x":8640,
+			"y":4980,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"ba10c721c9f41bb4",
+			"type":"text",
+			"text":"users :\n1- id                  : Auto increment , Primary key\n2- name\n3- email            : index-> unique\n4- password\n5- is_verified\n6- verify_otp\n7- otp_expire : stores the time at which OTP will be expired \n8- created at : it records the exact time at which the user was                         inserted into the database ",
+			"styleAttributes":{
+				"border":null
+			},
+			"x":9590,
+			"y":3650,
+			"width":480,
+			"height":270
+		},
+		{
+			"id":"86650a4ab3fa167d",
+			"type":"text",
+			"text":"devices :\n1- mac_address           : \n2- device_type : it must be one of the following `device_type` enum('DO-1CH','DO-2CH','DO-3CH','DO-4CH','AI-1CH','AI-2CH','AI-3CH','AI-4CH') NOT NULL,           \n3- ch1_value           : \n4- ch2_value\n5- ch3_value\n6- ch4_value\n7- online: \n8- owner_user_id : IS LINKED TO  users.user_id\n9-last_seen :recording the last time the device updated his information\n10- created_at : |recording the first time the device inserted to the DB",
+			"styleAttributes":{
+				"border":null
+			},
+			"x":10140,
+			"y":3650,
+			"width":480,
+			"height":360
+		},
+		{
+			"id":"175879265f45c47b",
+			"type":"text",
+			"text":"database name : casper-we-iot-platform",
+			"styleAttributes":{},
+			"x":10080,
+			"y":3480,
+			"width":340,
+			"height":60
+		},
+		{
+			"id":"02582cc55836b70e",
+			"type":"text",
+			"text":"**Use a queue (Redis/RabbitMQ)**\n\n- Instead of relying on PHP to always be online, messages are pushed into a **queue** first.\n    \n- Even if PHP stops, queued messages remain and can be processed later.",
+			"styleAttributes":{},
+			"x":10860,
+			"y":700,
+			"width":520,
+			"height":200
+		},
+		{
+			"id":"89c2472a2ecd7b04",
+			"type":"text",
+			"text":"three files responsible for Registeration process:\n1️⃣ `db.php` → Database connection  \n2️⃣ `register.php` → Register + Send OTP  \n3️⃣ `verify.php` → Verify OTP",
+			"styleAttributes":{
+				"textAlign":null
+			},
+			"x":7740,
+			"y":4780,
+			"width":400,
+			"height":170
+		},
+		{
+			"id":"27012ffa0464c86c",
+			"type":"text",
+			"text":" '''<?php\n$host = \"localhost\";\n$user = \"root\";\n$pass = \"\";\n$db   = \"mydatabase\";\n\n$conn = new mysqli($host, $user, $pass, $db);\n\nif ($conn->connect_error) {\n    die(\"Database connection failed: \" . $conn->connect_error);\n}\n?>\n\n",
+			"styleAttributes":{},
+			"x":7770,
+			"y":5180,
+			"width":600,
+			"height":300
+		},
+		{
+			"id":"91d5060b524f755d",
+			"type":"text",
+			"text":"###**server flowgraph**###\n\n\n'''[Device / ESP / App]  \n|  \n| MQTT Publish (WSS)  \nv  \n[mqtt.casper-we.site] <- Cloudflare tunnels public domain to local server  \n|  \n| Cloudflare Tunnel  \nv  \n[Local Mosquitto Broker: localhost:8083]  \n|  \n| PHP Script (listenmqttdevicesinfofromdevicestoserver.php)  \n| - Connects via local MQTT port 1883  \n| - Subscribes to device topics: devices/server/+/device_channels_values_device_ack_to_the_server/  \nv  \n[PHP Script Processing]  \n- Decode JSON payload  \n- Extract MAC address  \n- Update MySQL database (u.t.m_tech)  \n- Update device channel values & online status  \n|  \n| Publish Acknowledgment MQTT Message  \nv  \n[Local Mosquitto Broker]  \n|  \n| Forward Acknowledgment (via same Cloudflare tunnel)  \nv  \n[Device / App]",
+			"styleAttributes":{},
+			"x":11400,
+			"y":3440,
+			"width":1600,
+			"height":760
+		},
+		{
+			"id":"a7b3334f6620bd96",
+			"type":"text",
+			"text":"'''<?php\n// ==================================================\n// MQTT PHP Listener with HTML Debug Output\n// ==================================================\n\n// Include the existing database connection file\ninclude \"db.php\"; // provides $conn as a mysqli connection\n\n// Enable full error reporting for debugging\nerror_reporting(E_ALL);\nini_set('display_errors', 1);\n\n// Prevent PHP script from timing out (run indefinitely)\nset_time_limit(0);\n\n// Enable MySQLi exceptions for better error handling\nmysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);\n\n// Force output to the browser immediately for live debug updates\nob_implicit_flush(true);\nob_end_flush();\n\n// Start HTML output for browser display\necho \"<!DOCTYPE html><html><head><title>MQTT Debug</title></head><body>\";\necho \"<h1>MQTT PHP Debug Output</h1><pre>\";\n\n// ==================================================\n// Include phpMQTT library\n// ==================================================\nrequire_once(\"C:/xampp/htdocs/phpMQTT-master/phpMQTT.php\");\nuse Bluerhinos\\phpMQTT;\n\n// ==================================================\n// MQTT Broker Configuration\n// ==================================================\n$server    = '127.0.0.1';                     // MQTT broker host\n$port      = 1883;                            // MQTT broker port\n$client_id = 'php-mqtt-pairing_' . uniqid();  // Unique client ID\n$username  = '';                               // MQTT username (if required)\n$password  = '';                               // MQTT password (if required)\n$useTLS    = false;                            // Use TLS (WSS) if true\n\n// Create MQTT client instance\n$mqtt = new phpMQTT($server, $port, $client_id);\n\n// Attempt to connect to MQTT broker\nif (!$mqtt->connect(true, NULL, $username, $password, $useTLS)) {\n    echo \"Failed to connect to MQTT broker\\n</pre></body></html>\";\n    exit; // Stop execution if connection fails\n}\necho \"[\".date('Y-m-d H:i:s').\"] Connected to MQTT broker\\n\";\n\n// ==================================================\n// Define subscription topic (per-device, using wildcard +)\n// ==================================================\n$subscribe_topic = 'devices/server/+/pairing_mode/pairing_data/';\n\n// ==================================================\n// Callback function executed when a message is received\n// ==================================================\n$callback = function($topic, $msg) use ($mqtt, $conn) {\n    // Print debug info for topic and message\n    echo \"[\".date('Y-m-d H:i:s').\"] Callback for topic: $topic\\n\";\n    echo \"Message: $msg\\n\";\n\n    // Decode the JSON message payload\n    $data = json_decode($msg, true);\n    if (!$data) {\n        echo \"Invalid JSON\\n\";\n        return;\n    }\n\n    // Define required fields in the JSON\n    $requiredFields = ['device_type','owner_user_id','ch1_value','ch2_value','ch3_value','ch4_value'];\n    foreach ($requiredFields as $f) {\n        if (!isset($data[$f])) {\n            echo \"Missing $f\\n\";\n            return;\n        }\n    }\n\n    // Extract MAC address from topic\n    // Topic format: devices/server/<mac_address>/pairing_mode/pairing_data\n    $parts = explode('/', $topic);\n    if (count($parts) < 5) {\n        echo \"Invalid topic format\\n\"; \n        return; \n    }\n    $mac_address = $parts[2]; // 3rd segment is MAC address\n\n    try {\n        // Prepare SQL statement to insert or update device in DB\n        $stmt = $conn->prepare(\"\n            INSERT INTO devices (\n                mac_address, device_type,\n                ch1_value, ch2_value, ch3_value, ch4_value,\n                owner_user_id, last_seen, online\n            ) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 1)\n            ON DUPLICATE KEY UPDATE\n                device_type=VALUES(device_type),\n                ch1_value=VALUES(ch1_value),\n                ch2_value=VALUES(ch2_value),\n                ch3_value=VALUES(ch3_value),\n                ch4_value=VALUES(ch4_value),\n                owner_user_id=VALUES(owner_user_id),\n                last_seen=NOW(),\n                online=1\n        \");\n\n        // Bind variables to the prepared statement (types: s=string, d=double, i=int)\n        $stmt->bind_param(\n            \"ssddddi\",\n            $mac_address,\n            $data['device_type'],\n            $data['ch1_value'],\n            $data['ch2_value'],\n            $data['ch3_value'],\n            $data['ch4_value'],\n            $data['owner_user_id']\n        );\n\n        // Execute SQL statement\n        $stmt->execute();\n        echo \"Device $mac_address paired successfully\\n\";\n\n        // Publish acknowledgment back to the device-specific topic\n        $ack_topic = \"devices/server/$mac_address/pairing_mode/ack/\";\n        $mqtt->publish($ack_topic,json_encode([\n            \"message\" => \"Device paired successfully\",\n           \n        ]),0);\n        echo \"Acknowledgment sent to $ack_topic\\n\";\n\n        // Close statement (do NOT close $conn as it's shared)\n        $stmt->close();\n    } catch (mysqli_sql_exception $e) {\n        echo \"Database error: \".$e->getMessage().\"\\n\";\n    }\n};\n\n// ==================================================\n// Subscribe to the wildcard topic\n// ==================================================\n$mqtt->subscribe([\n    $subscribe_topic => [\n        'qos' => 0,\n        'function' => $callback\n    ]\n]);\necho \"[\".date('Y-m-d H:i:s').\"] Subscribed to topic $subscribe_topic\\n\";\n\n// ==================================================\n// Main loop to keep processing incoming MQTT messages\n// ==================================================\nwhile ($mqtt->proc()) {\n    usleep(100000); // Sleep 0.1s to reduce CPU usage\n}\n\n// Close MQTT connection (normally never reached)\n$mqtt->close();\n\necho \"</pre></body></html>\";\n?>",
+			"styleAttributes":{},
+			"x":13940,
+			"y":5960,
+			"width":2340,
+			"height":2640
+		},
+		{
+			"id":"0887bddc594ed7e1",
+			"type":"text",
+			"text":"### **Workflow of `listenmqttdevices_pairing_mode_insertnewdevicein_devicesdb.php (Working_mode)`**\n\n1. **Initialize Script**\n    \n    - Includes the existing database connection file (`db.php`) to use the `$conn` MySQLi connection.\n        \n    - Enables **full error reporting** and displays errors in the browser for debugging (`error_reporting(E_ALL)` and `ini_set('display_errors', 1)`).\n        \n    - Prevents PHP script from timing out (`set_time_limit(0)`), allowing continuous execution.\n        \n    - Enables **MySQLi exceptions** for better error handling (`mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT)`).\n        \n    - Forces output to the browser immediately (`ob_implicit_flush(true)` and `ob_end_flush()`), so debugging messages appear live.\n        \n2. **Start HTML Debug Output**\n    \n    - Generates an HTML page with a `<pre>` block to format and display MQTT debug messages.\n        \n3. **Include phpMQTT Library**\n    \n    - Loads `phpMQTT.php` and uses the `Bluerhinos\\phpMQTT` namespace.\n        \n4. **Connect to MQTT Broker**\n    \n    - Creates an MQTT client instance with broker address `127.0.0.1` and port `1883`.\n        \n    - Generates a **unique client ID** for this session (`php-mqtt-pairing_<unique>`).\n        \n    - Optionally uses authentication (`username`/`password`) and TLS (`$useTLS = false` in this setup).\n        \n    - Attempts to connect to the broker and outputs a debug message if successful.\n        \n5. **Subscribe to Per-Device MQTT Topics**\n    \n    - Subscribes to topic: `devices/server/+/pairing_mode/pairing_data/`.\n        \n    - The `+` wildcard dynamically matches all devices’ MAC addresses, so each device can send pairing data.\n        \n6. **Handle Incoming MQTT Messages**\n    \n    - Defines a **callback function** that is triggered whenever a message is received on the subscribed topics.\n        \n    - Prints the topic and raw message payload for debugging.\n        \n    - Parses the JSON payload from the message.\n        \n    - Validates that required fields are present:\n        \n        - `device_type`, `owner_user_id`, `ch1_value`, `ch2_value`, `ch3_value`, `ch4_value`\n            \n    - Skips processing if any field is missing or JSON is invalid.\n        \n7. **Extract Device MAC Address**\n    \n    - Parses the MAC address from the MQTT topic: `devices/server/<mac_address>/pairing_mode/pairing_data/`.\n        \n    - Skips processing if the topic format is invalid.\n        \n8. **Insert or Update Device in Database**\n    \n    - Prepares an SQL statement to **insert a new device** if it doesn’t exist, or **update existing device data**:\n        \n        - Updates `device_type` and channel values (`ch1_value` → `ch4_value`).\n            \n        - Updates `owner_user_id` if changed.\n            \n        - Updates `last_seen` timestamp to current time.\n            \n        - Sets `online = 1`.\n            \n    - Binds parameters and executes the SQL statement using the shared `$conn`.\n        \n    - Outputs debug messages confirming database insertion or update.\n        \n9. **Publish Acknowledgment to Device**\n    \n    - After successfully updating the database, publishes a JSON acknowledgment message to:\n        \n        `devices/server/<mac_address>/pairing_mode/ack/`\n        \n    - The payload includes:\n        \n        - `message` → `\"Device paired successfully\"`\n            \n    - Outputs debug message confirming acknowledgment was sent.\n        \n10. **Continuous Processing Loop**\n    \n    - Keeps running in an infinite loop using `$mqtt->proc()` to continuously listen for MQTT messages.\n        \n    - Uses `usleep(100000)` to reduce CPU usage while waiting for new messages.\n        \n11. **Clean Up (Not Normally Reached)**\n    \n    - Closes the MQTT connection if the script ever exits.\n        \n    - Ends the HTML debug output.",
+			"styleAttributes":{},
+			"x":13940,
+			"y":4920,
+			"width":2340,
+			"height":1000
+		},
+		{
+			"id":"e529d104be4e0443",
+			"type":"text",
+			"text":"### **ESP & Mobile App – Working Mode Flow**\n\nIn this mode, the ESP acts as a **slave device**. It does not modify the database; it only subscribes to MQTT topics to receive channel updates.\n\n**Step 1 – Power On**\n\n- The ESP powers on automatically when connected to electricity.\n    \n\n**Step 2 – Connect to Wi-Fi**\n\n- ESP retrieves the saved SSID and password from EEPROM.\n    \n- ESP automatically connects to the Wi-Fi network.\n    \n\n**Step 3 – Listen to Channels via MQTT**\n\n- ESP subscribes to the MQTT topic:\n    \n    app/devices/<mac_address>/device_channels_values/\n    \n- When new data arrives on this topic, ESP updates its channel variables:\n    \n    - `ch1_value` → `ch1_value variable`\n        \n    - `ch2_value` → `ch2_value variable`\n        \n    - `ch3_value` → `ch3_value variable`\n        \n    - `ch4_value` → `ch4_value variable`\n        \n\n**Step 4 – Update GPIOs**\n\n- ESP sets its GPIO outputs according to the received channel values.\n    \n- Each GPIO reflects the current state of its corresponding channel.\n    \n\n**Step 5 – Send Acknowledgment to Server**\n\n- ESP publishes an acknowledgment to the topic:\n    \n    devices/server/<mac_address>/device_channels_values_device_ack_to_the_server/\n    \n- Message body (JSON):\n    \n\n{  \n  \"ch1_value\": \"ch1_value variable\",  \n  \"ch2_value\": \"ch2_value variable\",  \n  \"ch3_value\": \"ch3_value variable\",  \n  \"ch4_value\": \"ch4_value variable\"  \n}\n\n---\n\n✅ **Linear Flow Summary:**\n\n**Power On → Wi-Fi Connect → Subscribe to Channels → Update Channels & GPIOs → Send ESP Acknowledgment**",
+			"styleAttributes":{},
+			"x":23560,
+			"y":4800,
+			"width":760,
+			"height":960
+		},
+		{
+			"id":"c02684c47392d730",
+			"type":"text",
+			"text":"### **ESP & Mobile App Pairing Flow**\n\nfirst pf all the user should press on the board to turn on the esp access point and converting from working_mode to pairing_mode\n**Step 1 – App connects to ESP**\n\n- The mobile app connects to the ESP’s default SSID and password.\n    \n- This establishes a local connection between the app and the ESP.\n    \n\n**Step 2 – App sends Wi-Fi credentials**\n\n- The app collects:\n    \n    - User Wi-Fi SSID\n        \n    - User Wi-Fi password\n        \n    - `owner_user_id` (from `users` table in the DB)\n        \n- Sends these values to the ESP via a **POST request**.\n    \n\n**Step 3 – ESP connects to server**\n\n- The ESP connects to the server using **MQTT**.\n    \n- Server endpoint: `server.casper-we.site/pairing_mode.php`.\n    \n\n**Step 4 – ESP publishes pairing data**\n\n- Topic format:\n    \n\ndevice/server/<mac_address>/pairing_mode/\n\n- Message body (JSON):\n    \n\n{  \n  \"mac_address\": \"device_mac_address\",  \n  \"device_type\": \"one of ['DO-1CH','DO-2CH','DO-3CH','DO-4CH','AI-1CH','AI-2CH','AI-3CH','AI-4CH']\",  \n  \"ch1_value\": 0,  \n  \"ch2_value\": 0,  \n  \"ch3_value\": 0,  \n  \"ch4_value\": 0,  \n  \"owner_user_id\": \"owner_user_id_variable\"  \n}\n\n**Step 5 – Server inserts into DB**\n\n- `pairing_mode.php` receives the MQTT message.\n    \n- It extracts all values from the message.\n    \n- Inserts a new row into the `devices` table with the device information.\n    \n\n---\n\n✅ This flow ensures:\n\n1. The ESP knows the user’s Wi-Fi credentials.\n    \n2. Each device is linked to the correct user via `owner_user_id`.\n    \n3. Initial channel values are set to `0`.\n    \n4. The server stores the device in the database immediately after pairing.\n-------------------------------------------------------------------------------------------\nsingle flow diagram \n\nUser press button → ESP Access Point ON → App connects to ESP → App sends Wi-Fi credentials & owner_user_id → ESP connects to MQTT server → ESP publishes pairing data → Server inserts new device into DB",
+			"styleAttributes":{},
+			"x":22440,
+			"y":4800,
+			"width":1040,
+			"height":1240
+		},
+		{
+			"id":"5381bc02e1b6286f",
+			"type":"text",
+			"text":"body:\n- {\"ch1_value\":1,\"ch2_value\":0,\"ch3_value\":1,\"ch4_value\":0,\"online\":1}",
+			"styleAttributes":{},
+			"x":25090,
+			"y":3370,
+			"width":380,
+			"height":200
+		},
+		{
+			"id":"3844af33648bcc31",
+			"type":"text",
+			"text":"mobile app :\n1-publish data first to the device\n2- update the switch widget color and convert from offline to online ",
+			"styleAttributes":{},
+			"x":25150,
+			"y":3795,
+			"width":260,
+			"height":190
+		},
+		{
+			"id":"dbcff052df0be963",
+			"type":"text",
+			"text":"this task found in serverside in file called listenmqttdevicesinfofromdevicestoserver_thenpublishtotheappafterstoringtheupdatesindbhappens.php\ncheck first if db updated successfuly in the server \nthen send the channels values and online state in the topic :\nserver/app/<mac_address>/device_channels_values_server_ack_to_the_app/",
+			"styleAttributes":{},
+			"x":25540,
+			"y":3235,
+			"width":540,
+			"height":225
+		},
+		{
+			"id":"0762cbe8b9371816",
+			"type":"text",
+			"text":"body:\n- {\n  \"ch1_value\": 1,\n  \"ch2_value\": 0,\n  \"ch3_value\": 1,\n  \"ch4_value\": 0\n}",
+			"styleAttributes":{},
+			"x":26120,
+			"y":3370,
+			"width":380,
+			"height":200
+		},
+		{
+			"id":"33685e2ab14f763b",
+			"type":"text",
+			"text":"server",
+			"styleAttributes":{},
+			"x":26180,
+			"y":3075,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e64f64d95d1ee3c3",
+			"type":"text",
+			"text":"esp",
+			"styleAttributes":{},
+			"x":26180,
+			"y":3860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3d600a175129fb26",
+			"type":"text",
+			"text":"body:\n- `ch1_value` → `ch1_value variable`\n        \n    - `ch2_value` → `ch2_value variable`\n        \n    - `ch3_value` → `ch3_value variable`\n        \n    - `ch4_value` → `ch4_value variable`",
+			"styleAttributes":{},
+			"x":25600,
+			"y":4280,
+			"width":380,
+			"height":200
+		},
+		{
+			"id":"51e3d7782ce9888d",
+			"type":"text",
+			"text":"example for test:\ntopic:\ndevice/server/2C:5B:3A:4C:1D:7E/pairing_mode/\nmessage:\n{  \n\"mac_address\": \"2C:5B:3A:4C:1D:7x\",  \n\"device_type\": \"DO_4CH\",  \n\"ch1_value\": 0,  \n\"ch2_value\": 1,  \n\"ch3_value\": 0,  \n\"ch4_value\": 1,  \n\"owner_user_id\": 123  \n}",
+			"styleAttributes":{},
+			"x":14060,
+			"y":8720,
+			"width":500,
+			"height":360
+		},
+		{
+			"id":"1426e39fc1a5a6da",
+			"type":"text",
+			"text":"wifi password",
+			"styleAttributes":{},
+			"x":23440,
+			"y":2990,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fdb207031198ddb8",
+			"type":"text",
+			"text":"wifi ssid ",
+			"styleAttributes":{},
+			"x":23170,
+			"y":2990,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"feaf3a70819b5f29",
+			"type":"text",
+			"text":"\"owner_user_id\": 3,",
+			"styleAttributes":{},
+			"x":22900,
+			"y":2990,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bf4c236ca368fe0b",
+			"type":"text",
+			"text":"device(pairing_mode) :\n    \"device_type\": \"DO-4CH\",\n    \n    \"ch1_value\": 0,\n    \"ch2_value\": 0,\n    \"ch3_value\": 0,\n    \"ch4_value\": 0",
+			"styleAttributes":{},
+			"x":23100,
+			"y":3200,
+			"width":400,
+			"height":220
+		},
+		{
+			"id":"7d058e105efcbec6",
+			"type":"text",
+			"text":"{\n    \n    \"device_type\": \"DO-4CH\",\n    \"owner_user_id\": 3,\n    \"ch1_value\": 0,\n    \"ch2_value\": 0,\n    \"ch3_value\": 0,\n    \"ch4_value\": 0\n}",
+			"styleAttributes":{},
+			"x":23080,
+			"y":3580,
+			"width":440,
+			"height":260
+		},
+		{
+			"id":"e4c57d461e053d75",
+			"type":"text",
+			"text":"server subscribe the coming topic and handle it to the database using the following file\nlistenmqttdevices_pairing_mode_insertnewdevicein_devicesdb.php",
+			"styleAttributes":{},
+			"x":23080,
+			"y":4040,
+			"width":440,
+			"height":120
+		},
+		{
+			"id":"34be0b33aaf1cec8",
+			"type":"text",
+			"text":"= {\"message\":\"Device paired successfully\"}",
+			"styleAttributes":{},
+			"x":24120,
+			"y":3420,
+			"width":260,
+			"height":100
+		},
+		{"id":"ccd981abfa88e6a1","type":"file","file":"system flowchart/ChatGPT Image Feb 22, 2026, 01_27_29 PM.png","x":22320,"y":6240,"width":2970,"height":1980},
+		{"id":"81f5ed631f156b36","type":"file","file":"system flowchart/ChatGPT Image Feb 22, 2026, 02_39_57 PM.png","x":23685,"y":5800,"width":490,"height":327},
+		{
+			"id":"2e0237159d11362a",
+			"type":"text",
+			"text":"Pairing mode ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":22440,
+			"y":4680,
+			"width":1040,
+			"height":60
+		},
+		{
+			"id":"a76664da8a26eba7",
+			"type":"text",
+			"text":"work mode",
+			"styleAttributes":{"textAlign":"center"},
+			"x":23560,
+			"y":4680,
+			"width":760,
+			"height":60
+		},
+		{
+			"id":"c8fda53cbd2246df",
+			"type":"text",
+			"text":"esp communication work flow\nesp has two modes:",
+			"styleAttributes":{"textAlign":"center"},
+			"x":22440,
+			"y":4580,
+			"width":1880,
+			"height":80
 		}
 	],
 	"edges":[
-		{
-			"id":"f5c83bbc091be1c3",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"61362bb19a9a26a2",
-			"fromSide":"top",
-			"toNode":"c9336e427daf22fa",
-			"toSide":"bottom"
-		},
 		{
 			"id":"ee08d07c6350b53c",
 			"styleAttributes":{},
@@ -319,33 +620,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"8b99e793b863c0a5",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"25dedb30302bf9fa",
-			"fromSide":"bottom",
-			"toNode":"3ac6a065155c06d1",
-			"toSide":"top"
-		},
-		{
-			"id":"109bf53d079d910a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"4efa30767b4b1d9e",
-			"fromSide":"bottom",
-			"toNode":"3ac6a065155c06d1",
-			"toSide":"top"
-		},
-		{
-			"id":"ef87613a9492615e",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"985bed0598771f27",
-			"fromSide":"bottom",
-			"toNode":"3ac6a065155c06d1",
-			"toSide":"top"
-		},
-		{
 			"id":"debda9cc3ff625f1",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -355,13 +629,196 @@
 			"toSide":"top"
 		},
 		{
-			"id":"cfe846a9e81a31b6",
+			"id":"7a6592242e4531e2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"86650a4ab3fa167d",
+			"fromSide":"bottom",
+			"toNode":"25ade2f74d7a12bd",
+			"toSide":"top"
+		},
+		{
+			"id":"bb56af5533f32b65",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ba10c721c9f41bb4",
+			"fromSide":"bottom",
+			"toNode":"0efbf19d16c6bcca",
+			"toSide":"top"
+		},
+		{
+			"id":"174ebfdda3d00059",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"61362bb19a9a26a2",
+			"fromSide":"top",
+			"toNode":"6a52c23aa97c5d1f",
+			"toSide":"bottom"
+		},
+		{
+			"id":"e788fcf204076a25",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"e7d4fa42c07c80f8",
 			"fromSide":"top",
-			"toNode":"c9336e427daf22fa",
+			"toNode":"6a52c23aa97c5d1f",
 			"toSide":"bottom"
+		},
+		{
+			"id":"26a6b3129c0cc706",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"dbcff052df0be963",
+			"fromSide":"top",
+			"toNode":"5381bc02e1b6286f",
+			"toSide":"top",
+			"label":"server/app/<mac_address>/device_channels_values_server_ack_to_the_app/"
+		},
+		{
+			"id":"17d32b3cced1efbb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dbcff052df0be963",
+			"fromSide":"right",
+			"toNode":"33685e2ab14f763b",
+			"toSide":"bottom"
+		},
+		{
+			"id":"a8544f4867312a75",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0762cbe8b9371816",
+			"fromSide":"left",
+			"toNode":"dbcff052df0be963",
+			"toSide":"bottom"
+		},
+		{
+			"id":"56e582f5445d539f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"e64f64d95d1ee3c3",
+			"fromSide":"top",
+			"toNode":"0762cbe8b9371816",
+			"toSide":"bottom",
+			"label":"devices/server/<mac_address>/device_channels_values_device_ack_to_the_server/"
+		},
+		{
+			"id":"b4f45cee16748dbf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5381bc02e1b6286f",
+			"fromSide":"bottom",
+			"toNode":"3844af33648bcc31",
+			"toSide":"top"
+		},
+		{
+			"id":"21dce277d30e8bfe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3844af33648bcc31",
+			"fromSide":"bottom",
+			"toNode":"3d600a175129fb26",
+			"toSide":"left",
+			"label":"app/devices/<mac_address>/device_channels_values/"
+		},
+		{
+			"id":"206853b87a929e37",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3d600a175129fb26",
+			"fromSide":"right",
+			"toNode":"e64f64d95d1ee3c3",
+			"toSide":"bottom"
+		},
+		{
+			"id":"21d97f0787db5f34",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1426e39fc1a5a6da",
+			"fromSide":"bottom",
+			"toNode":"bf4c236ca368fe0b",
+			"toSide":"top"
+		},
+		{
+			"id":"e063b2960e816055",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fdb207031198ddb8",
+			"fromSide":"bottom",
+			"toNode":"bf4c236ca368fe0b",
+			"toSide":"top"
+		},
+		{
+			"id":"1bc40cfe9af36465",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"feaf3a70819b5f29",
+			"fromSide":"bottom",
+			"toNode":"bf4c236ca368fe0b",
+			"toSide":"top"
+		},
+		{
+			"id":"e215f6a523fc43e4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"bf4c236ca368fe0b",
+			"fromSide":"bottom",
+			"toNode":"7d058e105efcbec6",
+			"toSide":"top",
+			"label":"devices/server/<device_mac_address>/pairing_mode/pairing_data/"
+		},
+		{
+			"id":"4e1c943a10b2b324",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"7d058e105efcbec6",
+			"fromSide":"bottom",
+			"toNode":"e4c57d461e053d75",
+			"toSide":"top",
+			"label":"devices/server/<device_mac_address>/pairing_mode/pairing_data/\n"
+		},
+		{
+			"id":"1b1b7d6cc3a2c103",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3fd79e02fdcab3aa",
+			"fromSide":"right",
+			"toNode":"34be0b33aaf1cec8",
+			"toSide":"bottom",
+			"label":"devices/server/<device_mac_address>/pairing_mode/ack/"
+		},
+		{
+			"id":"33ea64785019f706",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"34be0b33aaf1cec8",
+			"fromSide":"top",
+			"toNode":"6cda2d06508a1d1f",
+			"toSide":"right"
+		},
+		{
+			"id":"430e62807ba91728",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"34be0b33aaf1cec8",
+			"fromSide":"top",
+			"toNode":"25cd211f00618b74",
+			"toSide":"right"
+		},
+		{
+			"id":"40ad2d9da76c2f4f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4b22dfc6e61cc48d",
+			"fromSide":"right",
+			"toNode":"6d07816a63015a31",
+			"toSide":"top"
 		}
 	],
 	"metadata":{

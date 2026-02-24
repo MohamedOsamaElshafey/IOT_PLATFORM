@@ -22,9 +22,19 @@ listener 8083
 protocol websockets
 allow_anonymous true
 
+or use the attached conf file in the mosquito server files by pasting it in c/programfiles/mosquitto
+
 *////////
 4- make a service in the cloudflared http:// localhost:8083 and the dns is mqtt.casper-we.site
 5-install the MQTT EXPLORER to test your mqtt 
    post man will not work 
 because the mosquito server speaks MQTT over websocket protocol
 but post man program speaks only websocket protocol so it wont work because the frames will not be the same
+/////////////////////////////////////////////////
+######install phpMQTT package
+  extract the zip file and 
+and put the path of phpMQTT.php in the require which is the first line of the listenmqttdevicesinfofromdevicestoserver_thenpublishtotheappafterstoringtheupdatesindbhappens.php file
+like (C:/xampp/htdocs/phpMQTT-master/phpMQTT.php)
+and put these linesin the first of code in the file listenmqttdevicesinfofromdevicestoserver_thenpublishtotheappafterstoringtheupdatesindbhappens.php
+require_once("C:/xampp/htdocs/phpMQTT-master/phpMQTT.php"); // Include the phpMQTT library
+use Bluerhinos\phpMQTT; // Use the phpMQTT namespace
